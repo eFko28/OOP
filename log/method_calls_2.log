@@ -1,0 +1,48 @@
+2025-02-16 18:00:18 - INFO - =============== 🚀 Skript OOP_metaClass2.py spuštěn. ===============
+2025-02-16 18:00:18 - INFO - 📢 Volání metody: __init__, Argumenty: (<__main__.Auto object at 0x000001CB9F731FD0>, 'Tesla'), {}
+2025-02-16 18:00:18 - INFO - 📢 Volání metody: start, Argumenty: (<__main__.Auto object at 0x000001CB9F731FD0>,), {}
+2025-02-16 18:00:18 - TERMINÁL - 🚗 Tesla nastartovalo!
+2025-02-16 18:00:18 - INFO - 📢 Volání metody: stop, Argumenty: (<__main__.Auto object at 0x000001CB9F731FD0>,), {}
+2025-02-16 18:00:18 - TERMINÁL - 🚗 Tesla zastavilo!
+2025-02-16 18:00:18 - INFO - 📢 Volání metody: __init__, Argumenty: (<__main__.Letadlo object at 0x000001CB9F732120>, 'Boeing 747'), {}
+2025-02-16 18:00:18 - TERMINÁL - ✈️ Letadlo Boeing 747 bylo vytvořeno.
+2025-02-16 18:00:18 - INFO - 📢 Volání metody: vzlet, Argumenty: (<__main__.Letadlo object at 0x000001CB9F732120>,), {}
+2025-02-16 18:00:18 - TERMINÁL - ✈️ Boeing 747 vzlétlo!
+2025-02-16 18:00:18 - INFO - 📢 Volání metody: pristani, Argumenty: (<__main__.Letadlo object at 0x000001CB9F732120>,), {}
+2025-02-16 18:00:18 - TERMINÁL - ✈️ Boeing 747 přistálo!
+2025-02-16 18:00:18 - INFO - 📢 VYPNUTO LOGOVÁNÍ
+2025-02-16 18:00:18 - INFO - =============== 🏁 Skript OOP_metaClass2.py ukončen. ===============
+
+
+2025-02-16 18:00:21 - INFO - =============== 🚀 Skript OOP_metaClass2.py spuštěn. ===============
+2025-02-16 18:00:21 - INFO - 📢 Volání metody: __init__, Argumenty: (<__main__.Auto object at 0x000001D658981FD0>, 'Tesla'), {}
+2025-02-16 18:00:21 - INFO - 📢 Volání metody: start, Argumenty: (<__main__.Auto object at 0x000001D658981FD0>,), {}
+2025-02-16 18:00:21 - TERMINÁL - 🚗 Tesla nastartovalo!
+2025-02-16 18:00:21 - INFO - 📢 Volání metody: stop, Argumenty: (<__main__.Auto object at 0x000001D658981FD0>,), {}
+2025-02-16 18:00:21 - TERMINÁL - 🚗 Tesla zastavilo!
+2025-02-16 18:00:21 - INFO - 📢 Volání metody: __init__, Argumenty: (<__main__.Letadlo object at 0x000001D658982120>, 'Boeing 747'), {}
+2025-02-16 18:00:21 - TERMINÁL - ✈️ Letadlo Boeing 747 bylo vytvořeno.
+2025-02-16 18:00:21 - INFO - 📢 Volání metody: vzlet, Argumenty: (<__main__.Letadlo object at 0x000001D658982120>,), {}
+2025-02-16 18:00:21 - TERMINÁL - ✈️ Boeing 747 vzlétlo!
+2025-02-16 18:00:21 - INFO - 📢 Volání metody: pristani, Argumenty: (<__main__.Letadlo object at 0x000001D658982120>,), {}
+2025-02-16 18:00:21 - TERMINÁL - ✈️ Boeing 747 přistálo!
+2025-02-16 18:00:21 - INFO - 📢 VYPNUTO LOGOVÁNÍ
+2025-02-16 18:00:21 - INFO - =============== 🏁 Skript OOP_metaClass2.py ukončen. ===============
+
+
+2025-02-16 18:45:15 - INFO - =============== 🚀 Skript OOP_metaClass2.py spuštěn. ===============
+2025-02-16 18:45:15 - INFO - 📢 Volání metody: __init__, Argumenty: (<__main__.Auto object at 0x0000021E3A461FD0>, 'Tesla'), {}
+2025-02-16 18:45:15 - INFO - 📢 Volání metody: start, Argumenty: (<__main__.Auto object at 0x0000021E3A461FD0>,), {}
+2025-02-16 18:45:15 - TERMINÁL - 🚗 Tesla nastartovalo!
+2025-02-16 18:45:15 - INFO - 📢 Volání metody: stop, Argumenty: (<__main__.Auto object at 0x0000021E3A461FD0>,), {}
+2025-02-16 18:45:15 - TERMINÁL - 🚗 Tesla zastavilo!
+2025-02-16 18:45:15 - INFO - 📢 Volání metody: __init__, Argumenty: (<__main__.Letadlo object at 0x0000021E3A462120>, 'Boeing 747'), {}
+2025-02-16 18:45:15 - TERMINÁL - ✈️ Letadlo Boeing 747 bylo vytvořeno.
+2025-02-16 18:45:15 - INFO - 📢 Volání metody: vzlet, Argumenty: (<__main__.Letadlo object at 0x0000021E3A462120>,), {}
+2025-02-16 18:45:15 - TERMINÁL - ✈️ Boeing 747 vzlétlo!
+2025-02-16 18:45:15 - INFO - 📢 Volání metody: pristani, Argumenty: (<__main__.Letadlo object at 0x0000021E3A462120>,), {}
+2025-02-16 18:45:15 - TERMINÁL - ✈️ Boeing 747 přistálo!
+2025-02-16 18:45:15 - INFO - 📢 VYPNUTO LOGOVÁNÍ
+2025-02-16 18:45:15 - INFO - =============== 🏁 Skript OOP_metaClass2.py ukončen. ===============
+
+
