@@ -27,7 +27,6 @@ OOP_Books_Library_02.py
 - Implementovat metodu třídy `from_string()`, která vytvoří knihu z textového řetězce.
 
 ---
-
 ## 3️⃣ Použití kompozice – Knihovna jako objekt
 - Místo obyčejného seznamu `library` vytvořit **novou třídu `Library`**, která bude obsahovat seznam knih.
 - Přidat metody pro:
@@ -73,3 +72,85 @@ OOP_Books_Library_02.py
 ✔ Práce s **uživatelským vstupem a interaktivním programem**.  
 
 """
+class Book:
+    def __init__(self, title: str, author: str, year: int):
+        self.title = title
+        self.author = author
+        self.year = year
+
+        self.available = True
+
+    def borrow(self):
+        if self.available == True:
+            self.available = False
+            print(f"Kniha {self.title} je nyní vypůjčena.")
+        if self.available == False:
+            print(f"Kniha {self.title} už je bohužel vypůjčena.")
+
+    def return_book(self):
+        if self.available == False:
+            self.available = True
+            print(f"Kniha {self.title} byla vrácena.")
+        if self.available == True:
+            print(f"Kniha již byla dostupná.")
+
+
+    def __str__(self):
+        status = "Dostupná" if self.available else "Vypůjčená"
+        return f"{self.title} - {self.author} ({self.year}) | Stav: {status}"
+    
+    @staticmethod
+    def is_valid_year(year: int):
+        if year <= 1440:
+            return False
+        else: 
+            return True
+
+    @classmethod
+    def from_string(cls, usr_string: str):
+        parsed_string = usr_string.split(";")
+        title, author, year = parsed_string
+        return cls(title, author, year)
+    
+
+class EBook(Book):
+    def __init__(self, title: str, author: str, year: int, media_type: str):
+        super().__init__(self, title, author, year)
+        self.media_type = media_type
+
+    def __str__(self):
+        status = "Dostupná" if self.available else "Vypůjčená"
+        return f"{self.title} - {self.author} ({self.year}) | Formát: {self.media_type} | Stav: {status}"
+
+class AudioBook(Book):
+    def __init__(self, title: str, author: str, year: int, duration: str):
+        super().__init__(self, title, author, year)
+        self.duration = duration
+
+    def __str__(self):
+        status = "Dostupná" if self.available else "Vypůjčená"
+        return f"{self.title} - {self.author} ({self.year}) | Délka trvání: {self.duration} | Stav: {status}"
+
+ 
+library = [
+    Book("1984", "George Orwell", 1949),
+    Book("To Kill a Mockingbird", "Harper Lee", 1960),
+    Book("Mistr a Markétka", "Michail Bulgakov", 1967),
+    Book("Malý princ", "Antoine de Saint-Exupéry", 1943)
+]
+"""
+## 3️⃣ Použití kompozice – Knihovna jako objekt
+- Místo obyčejného seznamu `library` vytvořit **novou třídu `Library`**, která bude obsahovat seznam knih.
+- Přidat metody pro:
+  - `add_book(book)`: Přidání knihy do knihovny.
+  - `remove_book(title)`: Odstranění knihy podle názvu.
+  - `list_books()`: Výpis všech knih v knihovně.
+"""
+  
+class Library:
+    def __init__(self, books_list: list):
+        self.books_list = books_list
+
+
+    def add_book(book):
+        
