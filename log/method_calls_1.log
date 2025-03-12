@@ -1,0 +1,36 @@
+2025-02-16 18:44:33 - 🚀 === START OOP_metaClass1.py - c:\Users\vladi\python_mgvsetin\OOP_books_Library\log\method_calls_1.log ===
+2025-02-16 18:44:33 - METACLASS: start, Argumenty: (<__main__.Auto object at 0x00000241B7496A50>,), {}
+2025-02-16 18:44:33 - METACLASS: stop, Argumenty: (<__main__.Auto object at 0x00000241B7496A50>,), {}
+2025-02-16 18:44:33 - METACLASS: vzlet, Argumenty: (<__main__.Letadlo object at 0x00000241B7496BA0>,), {}
+2025-02-16 18:44:33 - METACLASS: pristani, Argumenty: (<__main__.Letadlo object at 0x00000241B7496BA0>,), {}
+2025-02-16 18:44:33 - 🏁 === END Skript OOP_metaClass1.py ukončen. ===
+
+
+2025-02-16 18:45:00 - 🚀 === START OOP_metaClass1.py - c:\Users\vladi\python_mgvsetin\OOP_books_Library\log\method_calls_1.log ===
+2025-02-16 18:45:00 - 📢 Vytvořena instance Auto: Tesla
+2025-02-16 18:45:00 - METACLASS: start, Argumenty: (<__main__.Auto object at 0x0000017E9D986A50>,), {}
+2025-02-16 18:45:00 - 📢 Tesla nastartovalo!
+2025-02-16 18:45:00 - METACLASS: stop, Argumenty: (<__main__.Auto object at 0x0000017E9D986A50>,), {}
+2025-02-16 18:45:00 - 📢 Tesla zastavilo!
+2025-02-16 18:45:00 - 📢 Vytvořena instance Letadlo: Boeing 747
+2025-02-16 18:45:00 - METACLASS: vzlet, Argumenty: (<__main__.Letadlo object at 0x0000017E9D986BA0>,), {}
+2025-02-16 18:45:00 - 📢 Boeing 747 vzlétlo!
+2025-02-16 18:45:00 - METACLASS: pristani, Argumenty: (<__main__.Letadlo object at 0x0000017E9D986BA0>,), {}
+2025-02-16 18:45:00 - 📢 Boeing 747 přistálo!
+2025-02-16 18:45:00 - 🏁 === END Skript OOP_metaClass1.py ukončen. ===
+
+
+2025-02-18 17:00:25 - 🚀 === START OOP_metaClass1.py - c:\Users\josef\Documents\VS-CODE\OOP_books_Library\log\method_calls_1.log ===
+2025-02-18 17:00:25 - 📢 Vytvořena instance Auto: Tesla
+2025-02-18 17:00:25 - METACLASS: start, Argumenty: (<__main__.Auto object at 0x000002562D21DF70>,), {}
+2025-02-18 17:00:25 - 📢 Tesla nastartovalo!
+2025-02-18 17:00:25 - METACLASS: stop, Argumenty: (<__main__.Auto object at 0x000002562D21DF70>,), {}
+2025-02-18 17:00:25 - 📢 Tesla zastavilo!
+2025-02-18 17:00:25 - 📢 Vytvořena instance Letadlo: Boeing 747
+2025-02-18 17:00:25 - METACLASS: vzlet, Argumenty: (<__main__.Letadlo object at 0x000002562D21E030>,), {}
+2025-02-18 17:00:25 - 📢 Boeing 747 vzlétlo!
+2025-02-18 17:00:25 - METACLASS: pristani, Argumenty: (<__main__.Letadlo object at 0x000002562D21E030>,), {}
+2025-02-18 17:00:25 - 📢 Boeing 747 přistálo!
+2025-02-18 17:00:25 - 🏁 === END Skript OOP_metaClass1.py ukončen. ===
+
+
