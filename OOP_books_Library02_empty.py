@@ -110,23 +110,23 @@ class AudioBook(Book):
 class Library:
     def __init__(self):
         # Initialize the internal list to store books
-        self.__books = []
+        self.books = []
 
     def add_book(self, book: Book):
         # Add a new book to the library
-        self.__books.append(book)
+        self.books.append(book)
 
     def remove_book(self, book: Book):
         # Remove a book from the library if it exists
-        if book in self.__books:
-            self.__books.remove(book)
+        if book in self.books:
+            self.books.remove(book)
         else:
             print("Kniha se nenašla v knihovně.")
 
     def list_books(self):
         # Enumerate and print all books in the library
         index = 1
-        for i in self.__books:
+        for i in self.books:
             # Convert each book to its string representation
             book_info = str(i)
             print(f"{index}. {book_info}")
@@ -135,7 +135,7 @@ class Library:
     def save_in_json(self, file_path: str):
         # Prepare a list to hold all book dictionaries
         books_dictionaries = []
-        for book in self.__books:
+        for book in self.books:
             book_dict = book.to_dict()
             books_dictionaries.append(book_dict)
         # Write the list of books to a JSON file with formatting options
@@ -175,22 +175,59 @@ if __name__ == "__main__":
     else:
         os.system("cls")
 
-    #Added a book so that library.json has something
-    """
-    new_book = Book("Broučci", "Jan Karafiát", 1876, True)
-    new_library = Library()    
-    
-    new_library.add_book(new_book)
-    new_library.save_in_json(JSON_FILE_PATH)
-    """
-
-    # Load books from the JSON file into the library instance
     library = Library.parse_from_json(JSON_FILE_PATH)
 
     print("\033[1;32m--- Seznam knih v knihovně: ---\033[0m\n")
-    
-    # List all books currently in the library
     library.list_books()
+    
+    while True:
+        print("\nCo si přejete udělat? (List, add, remove, save)")
+        while True:
+            user_choice = input("Váš výběr: ")
+            if user_choice.lower() == "list" or "add" or "remove" or "save":
+                break
+            else:
+                print("Výběr nebyl správný. (List, add, remove, save)")
+        
+        if user_choice.lower() == "list":
+            print("\n")
 
-    # Save the current library state back to the JSON file
-    library.save_in_json(JSON_FILE_PATH)
+            print("\033[1;32m--- Seznam knih v knihovně: ---\033[0m\n")
+            library.list_books()
+
+        if user_choice.lower() == "add":
+            print("\n")
+            user_new_book_title = input("Zadejte název nové knihy: ")
+            user_new_book_author = input("Zadejte autora nové knihy: ")
+            user_new_book_year = input("Zadejte rok vzniku nové knihy: ")
+            while True:
+                user_new_book_available = input("Je kniha dostupná? (Y/n): ")
+                if user_new_book_available.lower() == "y" or "n" or "":
+                    break
+            if user_new_book_available.lower() == "n":
+                user_new_book_available == False
+            else: 
+                user_new_book_available == True
+
+            new_book = Book(user_new_book_title, user_new_book_author, user_new_book_year, user_new_book_available)
+            library.add_book(new_book)
+        
+        if user_choice.lower() == "remove":
+            print("\n")
+
+            while True:
+                try:
+                    remove_book_index = int(input("Kterou knihu chcete odstranit? (Číslo v pořadí): "))
+                    break
+                except ValueError:
+                    print("\nVámi vybraná hodnota musí být číslo.\n")
+
+            if 0 <= remove_book_index <= len(library.books):
+                book_to_remove = library.books[remove_book_index - 1]
+                library.remove_book(book_to_remove)
+                print("Kniha byla odstraněna.")
+            else:
+                print("Neplatné číslo knihy.")
+
+        if user_choice.lower() == "save":
+            library.save_in_json(JSON_FILE_PATH)
