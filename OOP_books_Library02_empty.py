@@ -207,7 +207,7 @@ if __name__ == "__main__":
             if user_new_book_available.lower() == "n":
                 user_new_book_available == False
             else: 
-                user_new_book_available == True
+                user_new_book_available == False
 
             new_book = Book(user_new_book_title, user_new_book_author, user_new_book_year, user_new_book_available)
             library.add_book(new_book)
