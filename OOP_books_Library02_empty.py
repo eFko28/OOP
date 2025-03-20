@@ -181,13 +181,13 @@ if __name__ == "__main__":
     library.list_books()
     
     while True:
-        print("\nCo si přejete udělat? (List, add, remove, save)")
+        print("\nCo si přejete udělat? (List, add, remove, save, quit)")
         while True:
             user_choice = input("Váš výběr: ")
             if user_choice.lower() == "list" or "add" or "remove" or "save":
                 break
             else:
-                print("Výběr nebyl správný. (List, add, remove, save)")
+                print("Výběr nebyl správný. (List, add, remove, save, quit)")
         
         if user_choice.lower() == "list":
             print("\n")
@@ -205,9 +205,9 @@ if __name__ == "__main__":
                 if user_new_book_available.lower() == "y" or "n" or "":
                     break
             if user_new_book_available.lower() == "n":
-                user_new_book_available == False
+                user_new_book_available = False
             else: 
-                user_new_book_available == False
+                user_new_book_available = True
 
             new_book = Book(user_new_book_title, user_new_book_author, user_new_book_year, user_new_book_available)
             library.add_book(new_book)
@@ -231,3 +231,6 @@ if __name__ == "__main__":
 
         if user_choice.lower() == "save":
             library.save_in_json(JSON_FILE_PATH)
+
+        if user_choice.lower() == "quit":
+            break
